@@ -27,7 +27,7 @@ public class JDBCTest {
             //int rows = stmt.executeUpdate("insert into ");
             //boolean flag = stmt.execute(sql);
 
-            while(rs.next()){
+            while(rs.next()){   //遍历每一行 然后处理一行中的对应字段
                 String name = rs.getString("username");
                 String pass = rs.getString(2);   //通过列数 从左到右 从1 开始
                 System.out.println(name+"--"+pass);
