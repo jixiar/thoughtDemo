@@ -14,4 +14,5 @@ public class TestValidator implements ConstraintValidator<TestAnno,Integer> {
         return  value % 2 != 0 ;
     }
 	
+	 
 }
